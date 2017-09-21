@@ -14,6 +14,7 @@ else
 fi
 
 echo "$MESSAGE"
+
 for somefile in ${TARGETDIR}/*; do
     echo "This is the file $somefile, with type:";
     # the file command tells you the type of a file.
