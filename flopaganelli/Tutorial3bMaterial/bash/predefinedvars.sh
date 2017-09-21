@@ -8,5 +8,5 @@ echo "Number of arguments: $#"
 echo "Name of this script: $0"
 echo "Arguments: $1 $2 $3 $4"
 
-# print this script's PID:
+# print this script's Process IDentifier:
 echo "PID is $$"
