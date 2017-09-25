@@ -31,13 +31,20 @@ file, please follow them! Each of them is worth a certain number of
 points for the Homework. 
 
 I also placed a copy of the output I'd like to see from the script in
-the 
+the
+
 >  ./solutions
+
 folder, in a file called
+
 > output.log
+
 The resulting output for the big list is in
+
 > allplatforms.csv  
+
 And the ordered list should look exactly like:
+
 > allplatforms.ordered.csv
 
-Good luck!   
+Good luck!
