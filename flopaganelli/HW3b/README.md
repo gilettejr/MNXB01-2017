@@ -1,9 +1,9 @@
 ########################################################################
-#
-# MNXB01-2017-HW3b
-# Author: Florido Paganelli florido.paganelli@hep.lu.se
-#         Lund University
-#
+##
+## MNXB01-2017-HW3b
+## Author: Florido Paganelli florido.paganelli@hep.lu.se
+##         Lund University
+##
 ########################################################################
 
 # Description of the problem
@@ -24,7 +24,7 @@ My friend wants to know/have:
 4. How many Pokémon videogames exist for each platform
 
 You should help me creating such software in one single script.
-I placed the files in the tarball dataset folder on github.
+I placed the files in the dataset folder on github.
 
 My suggestions how to implement the script are in the pokemon.sh.skeleton
 file, please follow them! Each of them is worth a certain number of
