@@ -33,7 +33,7 @@ points for the Homework.
 I also placed a copy of the output I'd like to see from the script in
 the
 
->  ./solutions
+>  ./result
 
 folder, in a file called
 
