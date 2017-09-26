@@ -13,5 +13,5 @@ MYENV2="This is my second environment variable"
 echo "Content of MYENV1: $MYENV1"
 echo "Content of MYENV2: $MYENV2"
 
-echo "Now check if MYENV2 still exists, with the command"
+echo "Now check if MYENV2 content is still defined, with the command"
 echo 'echo $MYENV2'
