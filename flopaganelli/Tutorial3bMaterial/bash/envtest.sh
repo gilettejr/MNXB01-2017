@@ -4,7 +4,6 @@
 if [ "x$MYENV1" == "x" ]; then
 	echo "MYENV1 not defined in the environment or empty. Please run"
         echo 'export MYENV1="This is my first environment variable"'
-        exit 1;
 fi
 
 # create an environment variable
