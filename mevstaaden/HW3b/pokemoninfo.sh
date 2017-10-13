@@ -63,8 +63,8 @@ fi
 echo -e "\nSearching for Pokémon Red..."
 # YOUR CODE HERE
 
-file = $(grep -l "Pokémon Red Version" $DBDIR)
-echo "The file containing Pokémon Red Version is $file" 
+pokred=$(grep -nr "Pokémon Red Version" $DBDIR)
+echo "The file containing Pokémon Red Version is $pokred" 
 
 ### Exercise 4: 1 point
 # delete existing allplatform.csv file in preparation of the next exercise
@@ -88,9 +88,9 @@ echo -e "\nCreating new allplatforms.csv"
 
 # YOUR FOR LOOP HERE
 
-for somefile in $DBDIR ; do
-	read = tail -n+2 $somefile;
-	read >> allplatforms.csv;
+for somefile in $DBDIR/*; do
+	read=$(tail -n+2 $somefile);
+	echo -e "$read" >> allplatforms.csv;
 done
 
 ### Exercise 4: 1 point
@@ -100,7 +100,7 @@ done
 echo -e "\nSorting allplatforms.csv..."
 # YOUR CODE HERE
 
-sort -o, --output=allplatforms.ordered.csv allplatforms.csv
+sort -t\" -k3 -o allplatforms.ordered.csv allplatforms.csv
 
 
 # Exercise 5: 4 points
@@ -122,12 +122,11 @@ echo -e "\nCalculating number of games for each file..."
 
 #YOUR CODE HERE
 
-for afile in $DBDIR ; do 
-	FilewoHead = $(tail -n+2 $afile);
-	NumofGames=$(wc -l $FilewoHead);
-	filename = $( basename $afile );
+for afile in $DBDIR/*; do 
+	NumofGames=$(tail -n+2 $afile|wc -l);
+	filename=$( basename $afile );
 	
 	echo -e "$filename has $NumofGames game(s) \n" 
-
+done
 
 exit 0;
